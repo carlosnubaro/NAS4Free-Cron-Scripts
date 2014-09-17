@@ -7,6 +7,9 @@
 #                                      __/ |
 #                                     |___/
 
+# A script to be scheduled with cron that will periodically output information about the 
+# disk usage of various directories on the NAS.
+
 # Begin the script by emptying the output file and pushing the last successful script complete date to it
 echo "Last Script Run Began:" > /mnt/mainpool/data/cat/Other/Server\ Script\ Outputs/diskusage_out.txt
 date >> /mnt/mainpool/data/cat/Other/Server\ Script\ Outputs/diskusage_out.txt
@@ -34,7 +37,6 @@ du -hs /mnt/mainpool/data/arc/Documentaries >> /mnt/mainpool/data/cat/Other/Serv
 du -hs /mnt/mainpool/data/arc/Music >> /mnt/mainpool/data/cat/Other/Server\ Script\ Outputs/diskusage_out.txt
 du -hs /mnt/mainpool/data/arc/Movies >> /mnt/mainpool/data/cat/Other/Server\ Script\ Outputs/diskusage_out.txt
 du -hs /mnt/mainpool/data/arc/TV >> /mnt/mainpool/data/cat/Other/Server\ Script\ Outputs/diskusage_out.txt
-du -hs /mnt/mainpool/data/cat/xxx >> /mnt/mainpool/data/cat/Other/Server\ Script\ Outputs/diskusage_out.txt
 
 # Add some blank line formatting
 echo "" >> /mnt/mainpool/data/cat/Other/Server\ Script\ Outputs/diskusage_out.txt
