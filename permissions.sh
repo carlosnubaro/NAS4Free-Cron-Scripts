@@ -53,7 +53,7 @@ chmod -R 770 asdf:asdfarc /mnt/home1/home1/
 # Maintain open permissions for VMware ESXi datastore for ease of management
 # (Not a security risk providing the SAN is on a completely isolated subnet)
 chown -R root:wheel /mnt/esxi
-chown -R 777 /mnt/esxi
+chmod -R 777 /mnt/esxi
 
 # Terminate the script by clearing up the output file and pushing
 # the last successful script complete date to it
