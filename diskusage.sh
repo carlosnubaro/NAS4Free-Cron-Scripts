@@ -26,6 +26,8 @@ echo "" >> /mnt/mainpool/data/cat/Other/Server\ Script\ Outputs/diskusage_out.tx
 # Print the total pool usage
 echo "Filesystem     Type      Size    Used   Avail Capacity  Mounted on" >> /mnt/mainpool/data/cat/Other/Server\ Script\ Outputs/diskusage_out.txt
 df -hT | grep '/mnt/mainpool/data' >> /mnt/mainpool/data/cat/Other/Server\ Script\ Outputs/diskusage_out.txt
+df -hT | grep '/mnt/home1/home1' >> /mnt/mainpool/data/cat/Other/Server\ Script\ Outputs/diskusage_out.txt
+df -hT | grep '/mnt/esxi/datastore' >> /mnt/mainpool/data/cat/Other/Server\ Script\ Outputs/diskusage_out.txt
 
 # Add some blank line formatting
 echo "" >> /mnt/mainpool/data/cat/Other/Server\ Script\ Outputs/diskusage_out.txt
