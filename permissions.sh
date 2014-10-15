@@ -41,6 +41,8 @@ chown -R asdf:asdfarc /mnt/mainpool/data/priv/A/
 chmod -R 770 /mnt/mainpool/data/priv/A/
 chown -R gelrii:gelrii /mnt/mainpool/data/priv/Gelrii/
 chmod -R 770 /mnt/mainpool/data/priv/Gelrii/
+chmod -R owncloud:owncloud /mnt/mainpool/data/priv/ownCloud/ 
+chmod -R 770 /mnt/mainpool/data/priv/ownCloud/
 
 # Maintain permissions for the misc dir
 chown -R root:wheel /mnt/mainpool/data/misc/
